@@ -14,6 +14,16 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                 }
+                .cancelbtn{
+                        width: 190px;
+                        background-color: rgb(99, 97, 97);
+                        color: white;
+                }
+                .equlbtn{
+                        width: 190px;
+                        background-color: rgb(99, 97, 97);
+                        color: white;
+                }
 
                 
         </style>
@@ -38,15 +48,15 @@
                         <div
                                 class="col-lg-6 col-md-6 col-sm-6 col-12 text-white border bg-light rounded-bottom border border-dark border-top-0   ">
                                 <div class="row py-3 ">
+                                        <div class=" col-lg-6  col-md-6 col-sm-6 col-6"><button
+                                                        class=" cancelbtn btn btn-outline-secondary btn-lg"
+                                                         onclick="clearDisplay()">C</button></div>
+                                        <!-- <div class="col-lg-6  col-md-6 col-sm-6 col-6"><button
+                                                        class="btn btn-outline-secondary btn-lg"
+                                                        onclick="clickV('%')">%</button></div> -->
                                         <div class="col-lg-3  col-md-3 col-sm-3 col-3"><button
                                                         class="btn btn-outline-secondary btn-lg"
-                                                        onclick="clearDisplay()">C</button></div>
-                                        <div class="col-lg-3  col-md-3 col-sm-3 col-3"><button
-                                                        class="btn btn-outline-secondary btn-lg"
-                                                        onclick="clickV('%')">%</button></div>
-                                        <div class="col-lg-3  col-md-3 col-sm-3 col-3"><button
-                                                        class="btn btn-outline-secondary btn-lg"
-                                                        onclick="clearDisplay()">x</button></div>
+                                                        onclick="clearDisplay('%')">%</button></div>
                                         <div class="col-lg-3  col-md-3 col-sm-3 col-3"><button
                                                         class="btn btn-outline-secondary btn-lg"
                                                         onclick="clickV('/')">/</button></div>
@@ -96,15 +106,15 @@
                                 <div class="row py-3">
                                         <div class="col-lg-3  col-md-3 col-sm-3 col-3"><button
                                                         class="btn btn-outline-secondary btn-lg"
-                                                        onclick="clickV('00')">00</button></div>
-                                        <div class="col-lg-3  col-md-3 col-sm-3 col-3"><button
-                                                        class="btn btn-outline-secondary btn-lg"
                                                         onclick="clickV('0')">0</button></div>
                                         <div class="col-lg-3  col-md-3 col-sm-3 col-3"><button
                                                         class="btn btn-outline-secondary btn-lg"
                                                         onclick="clickV('.')">.</button></div>
-                                        <div class="col-lg-3  col-md-3 col-sm-3 col-3"><button
-                                                        class="btn btn-outline-secondary btn-lg bg-primary text-white"
+                                        <!-- <div class="col-lg-3  col-md-3 col-sm-3 col-3"><button
+                                                        class="btn btn-outline-secondary btn-lg"
+                                                        onclick="clickV('.')">.</button></div> -->
+                                        <div class="col-lg-6  col-md-6 col-sm-6 col-6"><button
+                                                        class=" equlbtn btn btn-outline-secondary btn-lg bg-primary text-white"
                                                         onclick="calculate('=')">=</button></div>
                                 </div>
 
